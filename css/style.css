@@ -1,4 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;
+
+500;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -117,6 +121,54 @@ input[type=search]::-webkit-search-results-decoration {
   max-width: 1230px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+/* Слайдер */
+
+/* Слайдер запущен */
+
+/* Слайдер с точками */
+
+/* Ограничивающая оболочка */
+
+.slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* Слайд */
+
+/* Слайд активный (показывается) */
+
+/* Слайд основной */
+
+/* Слайд по центру */
+
+/* Клонированный слайд */
+
+/* Стрелка */
+
+/* Стрелка влево */
+
+/* Стрелка вправо */
+
+/* Стрелка не активная */
+
+/* Точки (булиты) */
+
+/* Активная точка */
+
+/* Элемент точки */
+
+.header {
+  margin-bottom: 15px;
 }
 
 .header__row {
@@ -277,6 +329,250 @@ input[type=search]::-webkit-search-results-decoration {
   border-radius: 50%;
   font-size: 8px;
 }
+
+.slider-main {
+  margin-bottom: 50px;
+}
+
+.slider-main__body {
+  position: relative;
+}
+
+.slider-main__item {
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  padding: 71px 0 0 101px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider-main__item:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, color-stop(40.45%, rgba(0, 0, 0, 0.43)), to(rgba(0, 0, 0, 0)));
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%);
+}
+
+.slider-main__summer {
+  background-image: url("../img/slider/02.png");
+}
+
+.slider-main__autumn {
+  background-image: url("../img/slider/01.png");
+}
+
+.slider-main__vitamine {
+  background-image: url("../img/slider/03.png");
+}
+
+.slider-main__content {
+  position: relative;
+  color: #fff;
+  padding-bottom: 76px;
+}
+
+.slider-main__title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 51px;
+  padding-bottom: 15px;
+  max-width: 420px;
+}
+
+.slider-main__text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+  padding-bottom: 32px;
+  max-width: 390px;
+}
+
+.slider-main__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  color: #fff;
+  width: 245px;
+  height: 50px;
+  background: #F47322;
+  border-radius: 25px;
+}
+
+.slider-main__control {
+  position: absolute;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  right: 46px;
+  bottom: 39px;
+  width: 97px;
+}
+
+.slider-main__control div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  background: rgba(235, 235, 235, 0.7);
+  width: 40px;
+  height: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+}
+
+.slider-main__next {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.promo__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.item-promo {
+  position: relative;
+  padding: 32px 0 31px 36px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 570px;
+          flex: 0 1 570px;
+  min-height: 380px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.item-promo_1 {
+  background-image: url("../img/promo/01.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.item-promo_2 {
+  background-image: url("../img/promo/02.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.item-promo__top {
+  position: relative;
+  z-index: 2;
+}
+
+.item-promo__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 23px;
+  margin-bottom: 21px;
+}
+
+.item-promo__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  max-width: 175px;
+}
+
+.item-promo__bottom {
+  position: relative;
+  z-index: 2;
+}
+
+.item-promo__price {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 23px;
+  margin-bottom: 8px;
+}
+
+.item-promo__delivery {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 25px;
+}
+
+.item-promo__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 242px;
+  height: 49px;
+  background: #fff;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  color: #5F5F61;
+  z-index: 2;
+}
+
+.item-promo__btn:hover {
+  border: 2px solid #5F5F61;
+}
+
+.item-promo:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3)));
+  background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  border-radius: 20px;
+}
 @supports (-webkit-appearance:none){
 .header__search:after{background:url("../img/icons/header/01.svg") no-repeat}
+.slider-main__summer{background-image:url("../img/slider/02.webp")}
+.slider-main__autumn{background-image:url("../img/slider/01.webp")}
+.slider-main__vitamine{background-image:url("../img/slider/03.webp")}
+.item-promo_1{background-image:url("../img/promo/01.webp")}
+.item-promo_2{background-image:url("../img/promo/02.webp")}
 }
